@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Toyota Fortuner",
+    "type": "SUV",
+    "price": 3500,
+    "images": "/images/front-left-side-47.avif",
+    "description": "Premium SUV for long family trips with spacious interiors and powerful performance."
+  },
+  {
+    "id": 2,
+    "title": "Honda City",
+    "type": "Sedan",
+    "price": 2200,
+    "images": "/images/0gdsEko6SByfzGjYf7Cf.avif",
+    "description": "Comfortable and efficient sedan, ideal for city drives and long routes."
+  },
+  {
+    "id": 3,
+    "title": "Royal Enfield Classic 350",
+    "type": "Bike",
+    "price": 800,
+    "images": "/images/download.jpeg",
+    "description": "Iconic bike with a classic look and powerful engine."
+  },
+  {
+    "id": 1,
+    "title": "Toyota Fortuner",
+    "type": "SUV",
+    "price": 3500,
+    "images": "/images/front-left-side-47.avif",
+    "description": "Premium SUV for long family trips with spacious interiors and powerful performance."
+  },
+  {
+    "id": 2,
+    "title": "Honda City",
+    "type": "Sedan",
+    "price": 2200,
+    "images": "/images/0gdsEko6SByfzGjYf7Cf.avif",
+    "description": "Comfortable and efficient sedan, ideal for city drives and long routes."
+  },
+  {
+    "id": 3,
+    "title": "Royal Enfield Classic 350",
+    "type": "Bike",
+    "price": 800,
+    "images": "/images/download.jpeg",
+    "description": "Iconic bike with a classic look and powerful engine."
+  }
+]

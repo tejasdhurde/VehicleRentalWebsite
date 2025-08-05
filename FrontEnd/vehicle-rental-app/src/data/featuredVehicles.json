@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Toyota Fortuner",
+    "type": "SUV",
+    "price": 3500,
+    "images": "/images/front-left-side-47.avif",
+    "description": "Premium SUV for long family trips with spacious interiors and powerful performance."
+  },
+  {
+    "id": 2,
+    "title": "Honda City",
+    "type": "Sedan",
+    "price": 2200,
+    "images": "/images/0gdsEko6SByfzGjYf7Cf.avif",
+    "description": "Comfortable and efficient sedan, ideal for city drives and long routes."
+  },
+  {
+    "id": 3,
+    "title": "Royal Enfield Classic 350",
+    "type": "Bike",
+    "price": 800,
+    "images": "/images/download.jpeg",
+    "description": "Iconic bike with a classic look and powerful engine."
+  },
+  {
+    "id": 4,
+    "title": "Hyundai Creta",
+    "type": "SUV",
+    "price": 2500,
+    "images": "/images/creta.avif",
+    "description": "Versatile SUV with sleek design and comfortable seating."
+  },
+  {
+    "id": 5,
+    "title": "Maruti Swift",
+    "type": "Hatchback",
+    "price": 1800,
+    "images": "/images/swift.avif",
+    "description": "Compact car perfect for city driving and fuel efficiency."
+  },
+  {
+    "id": 6,
+    "title": "KTM Duke 390",
+    "type": "Bike",
+    "price": 1000,
+    "images": "/images/ktm.avif",
+    "description": "Aggressive street bike with excellent performance for thrill seekers."
+  },
+  {
+    "id": 7,
+    "title": "Mahindra XUV700",
+    "type": "SUV",
+    "price": 3200,
+    "images": "/images/xuv700.webp",
+    "description": "Modern SUV with tech-loaded features and robust engine."
+  },
+  {
+    "id": 8,
+    "title": "Volkswagen Virtus",
+    "type": "Sedan",
+    "price": 2400,
+    "images": "/images/virtus.avif",
+    "description": "Stylish and solidly built sedan for a premium experience."
+  },
+  {
+    "id": 9,
+    "title": "TVS Jupiter",
+    "type": "Scooter",
+    "price": 500,
+    "images": "/images/jupiter.avif",
+    "description": "Reliable and comfortable scooter for daily commuting."
+  },
+  {
+    "id": 10,
+    "title": "Tata Nexon EV",
+    "type": "SUV",
+    "price": 2800,
+    "images": "/images/Nexon.avif",
+    "description": "Electric SUV offering great range and environmental benefits."
+  },
+  {
+    "id": 11,
+    "title": "Yamaha R15 V4",
+    "type": "Bike",
+    "price": 900,
+    "images": "/images/r15.avif",
+    "description": "Sporty bike with refined performance and sharp looks."
+  },
+  {
+    "id": 12,
+    "title": "Renault Kwid",
+    "type": "Hatchback",
+    "price": 1600,
+    "images": "/images/kwid.avif",
+    "description": "Budget-friendly hatchback with a bold SUV-like stance."
+  }
+]

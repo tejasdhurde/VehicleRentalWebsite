@@ -1,0 +1,24 @@
+.vehicle-gallery {
+  margin-top: 20px;
+}
+
+.vehicle-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.vehicle-image-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.vehicle-gallery-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}

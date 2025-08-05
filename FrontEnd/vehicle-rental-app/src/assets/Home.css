@@ -1,0 +1,47 @@
+/* Home.css */
+
+.home-page {
+  background-color: #f8f9fa;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd, #0a58ca);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 5px 20px rgba(13, 110, 253, 0.2);
+}
+
+.search-input {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 6px;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.btn-search {
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+.btn-search:hover {
+  background-color: #e2e6ea;
+}
+
+.featured-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .search-input {
+    width: 100%;
+  }
+}

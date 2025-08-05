@@ -1,0 +1,23 @@
+/* Privacy.css */
+
+.privacy-policy .card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.privacy-policy .card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.privacy-policy h2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+.privacy-policy p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}

@@ -1,0 +1,33 @@
+/* VehicleDetails.css */
+
+.vehicle-details-page {
+  max-width: 900px;
+  margin: auto;
+}
+
+.vehicle-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.vehicle-header p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.vehicle-info {
+  background-color: #f8f9fa;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.vehicle-info:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.vehicle-info .lead {
+  font-size: 1.1rem;
+  color: #444;
+}

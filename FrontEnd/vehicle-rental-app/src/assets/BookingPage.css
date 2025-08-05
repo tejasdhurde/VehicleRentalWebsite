@@ -1,0 +1,21 @@
+/* BookingPage.css */
+.booking-page {
+  height: 100vh;
+  background: #f1f5f9;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.booking-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  overflow-y: auto;
+  max-height: 95vh;
+}
+
+.vehicle-info img {
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+

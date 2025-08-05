@@ -1,0 +1,37 @@
+/* Header.css */
+
+/* Add subtle shadow */
+.custom-shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1030; /* ensure it stays above everything */
+}
+
+/* When header is fixed, compensate with padding in main content */
+body {
+  padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Smooth font and transition on hover */
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #0dcaf0; /* Bootstrap's info color */
+}
+
+/* Brand logo */
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Make header compact on small screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}

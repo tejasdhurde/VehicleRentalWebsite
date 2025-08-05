@@ -1,0 +1,33 @@
+/* ManageVehicles.css */
+
+.manage-vehicles-page {
+  padding: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.action-buttons .btn {
+  min-width: 85px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.action-buttons .btn:hover {
+  transform: scale(1.05);
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table thead th {
+  background-color: #212529;
+  color: #fff;
+}

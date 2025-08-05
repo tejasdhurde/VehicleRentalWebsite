@@ -1,0 +1,17 @@
+/* MainLayout.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 10;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 1rem; /* Optional spacing if needed */
+}
