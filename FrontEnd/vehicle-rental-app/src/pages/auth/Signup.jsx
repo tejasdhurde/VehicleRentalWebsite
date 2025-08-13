@@ -11,7 +11,7 @@ const Signup = () => {
     password: '',
     reEnterPassword: '',
     phone: '',
-    role: 'CUSTOMER' // Default role
+    role: 'CUSTOMER' 
   });
 
   const [error, setError] = useState('');
@@ -19,7 +19,6 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check if passwords match
     if (form.password !== form.reEnterPassword) {
       setError("❌ Passwords do not match.");
       return;

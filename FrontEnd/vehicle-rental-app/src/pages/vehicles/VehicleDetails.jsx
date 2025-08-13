@@ -11,6 +11,24 @@ const VehicleDetails = () => {
 
   const [vehicle, setVehicle] = useState(null);
 
+  // 📝 Dummy Reviews
+  const reviews = [
+    {
+      reviewId: 1,
+      userName: 'Alice Sharma',
+      rating: 5,
+      comment: 'Amazing car and very clean! Smooth experience.',
+      date: '2025-08-01'
+    },
+    {
+      reviewId: 2,
+      userName: 'Ravi Deshmukh',
+      rating: 4,
+      comment: 'Car was well maintained. Booking was easy.',
+      date: '2025-07-28'
+    }
+  ];
+
   useEffect(() => {
     const fetchVehicle = async () => {
       try {
@@ -61,15 +79,35 @@ const VehicleDetails = () => {
         <p className="text-muted">{vehicle.category}</p>
       </div>
 
-      <VehicleGallery images={vehicle.images} />
+      <div className="row">
+        <div className="col-md-7 mb-4">
+          <VehicleGallery images={vehicle.images} />
+        </div>
 
-      <div className="vehicle-info mt-4 p-4 bg-white rounded shadow-sm">
-        <p className="lead">{vehicle.description}</p>
-        <p><strong>Rental Price:</strong> ₹{vehicle.pricePerDay} / day</p>
+        <div className="col-md-5 mb-4">
+          <div className="vehicle-info p-4 bg-white rounded shadow-sm h-100">
+            <p className="lead">{vehicle.description}</p>
+            <p><strong>Rental Price:</strong> ₹{vehicle.pricePerDay} / day</p>
 
-        <button className="btn btn-success mt-3 w-100" onClick={handleBooking}>
-          🚗 Book This Vehicle
-        </button>
+            <button className="btn btn-success mt-3 w-100" onClick={handleBooking}>
+              🚗 Book This Vehicle
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="vehicle-reviews-section mt-4 p-4 bg-light rounded shadow-sm">
+        <h5 className="mb-3 text-primary fw-bold">📢 Customer Reviews</h5>
+        {reviews.map((review) => (
+          <div key={review.reviewId} className="mb-3 border-bottom pb-2">
+            <strong>{review.userName}</strong>{' '}
+            <span className="text-warning">⭐ {review.rating}/5</span>
+            <p className="mb-1">{review.comment}</p>
+            <small className="text-muted">
+              {new Date(review.date).toLocaleDateString()}
+            </small>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
-import '../assets/MainLayout.css'; // ✅ Import custom layout styling
+import '../assets/MainLayout.css'; 
 
 const MainLayout = () => {
   return (

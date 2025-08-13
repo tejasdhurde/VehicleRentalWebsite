@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/Terms.css'; // ✅ Import your custom CSS
+import '../assets/Terms.css'; 
 
 const Terms = () => {
   return (

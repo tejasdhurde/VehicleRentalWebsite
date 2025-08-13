@@ -1,6 +1,5 @@
 package com.rentify.entity;
 
-
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -18,7 +17,6 @@ public class Payment {
     private Booking booking;
 
     private BigDecimal amount;
-
     private String paymentMethod;
 
     @Enumerated(EnumType.STRING)
@@ -74,5 +72,5 @@ public class Payment {
 		this.paymentDate = paymentDate;
 	}
 
-  
+    
 }

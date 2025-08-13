@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top custom-shadow">
       <Link className="navbar-brand fw-bold fs-4" to="/">
-        🚗 VehicleRental
+        🚗 Rentify
       </Link>
 
       <button
@@ -38,9 +38,11 @@ const Header = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/dashboard/bookings">My Bookings</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/admin/add-vehicle">Add Vehicle</Link>
-              </li>
+              {user.role === "OWNER" && (
+                <li className="nav-item">
+                  <Link className="nav-link" to="/admin/manage-vehicles">Manage Vehicles</Link>
+                </li>
+              )}
             </>
           )}
         </ul>

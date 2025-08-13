@@ -24,7 +24,6 @@ public class UserRegisterRequest {
 
     private String phone;
 
-    // Getters and Setters
     public String getName() {
         return name;
     }

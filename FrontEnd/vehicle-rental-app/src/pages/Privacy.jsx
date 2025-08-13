@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/Privacy.css'; // ✅ Import custom CSS
+import '../assets/Privacy.css'; 
 
 const Privacy = () => {
   return (

@@ -1,6 +1,5 @@
 package com.rentify.entity;
 
-
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
@@ -12,11 +11,11 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long reviewId;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "vehicle_id", nullable = false)
     private Vehicle vehicle;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id", nullable = false)
     private User customer;
 
@@ -25,56 +24,60 @@ public class Review {
     @Column(columnDefinition = "TEXT")
     private String comment;
 
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAt;
 
-	public Long getReviewId() {
-		return reviewId;
-	}
+    @PrePersist
+    public void onCreate() {
+        this.createdAt = LocalDateTime.now();
+    }
 
-	public void setReviewId(Long reviewId) {
-		this.reviewId = reviewId;
-	}
 
-	public Vehicle getVehicle() {
-		return vehicle;
-	}
+    public Long getReviewId() {
+        return reviewId;
+    }
 
-	public void setVehicle(Vehicle vehicle) {
-		this.vehicle = vehicle;
-	}
+    public void setReviewId(Long reviewId) {
+        this.reviewId = reviewId;
+    }
 
-	public User getCustomer() {
-		return customer;
-	}
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
 
-	public void setCustomer(User customer) {
-		this.customer = customer;
-	}
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
 
-	public int getRating() {
-		return rating;
-	}
+    public User getCustomer() {
+        return customer;
+    }
 
-	public void setRating(int rating) {
-		this.rating = rating;
-	}
+    public void setCustomer(User customer) {
+        this.customer = customer;
+    }
 
-	public String getComment() {
-		return comment;
-	}
+    public int getRating() {
+        return rating;
+    }
 
-	public void setComment(String comment) {
-		this.comment = comment;
-	}
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
 
-	public LocalDateTime getCreatedAt() {
-		return createdAt;
-	}
+    public String getComment() {
+        return comment;
+    }
 
-	public void setCreatedAt(LocalDateTime createdAt) {
-		this.createdAt = createdAt;
-	}
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 
-    // Getters and Setters
-    
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
 }
+

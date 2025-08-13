@@ -47,7 +47,6 @@ const AddVehicle = () => {
     setLoading(true);
 
     try {
-      // 🚀 1. Add vehicle (JSON)
       const vehiclePayload = {
         ...vehicle,
         ownerId
@@ -67,7 +66,6 @@ const AddVehicle = () => {
       const createdVehicle = await vehicleRes.json();
       const vehicleId = createdVehicle.vehicleId;
 
-      // 🚀 2. Upload image (multipart/form-data)
       const formData = new FormData();
       formData.append('file', imageFile);
 

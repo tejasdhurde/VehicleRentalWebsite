@@ -21,7 +21,6 @@ const Login = () => {
 
       const data = response.data;
 
-      // ✅ Store token + user in context/localStorage
       login({
         token: data.token,
         userId: data.id,
@@ -106,3 +105,4 @@ const Login = () => {
 };
 
 export default Login;
+

@@ -4,7 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import '../../assets/ForgotPassword.css';
 
 const ForgotPassword = () => {
-  const [step, setStep] = useState(1); // Step 1: email, Step 2: otp + new password
+  const [step, setStep] = useState(1); 
   const [email, setEmail] = useState('');
   const [otp, setOtp] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     try {
       await axios.post('http://localhost:8080/api/auth/forgot-password', { email });
       setMessage('📧 OTP sent to your email.');
-      setStep(2); // move to next step
+      setStep(2); 
     } catch (error) {
       setMessage('❌ Failed to send OTP. Please check email.');
     }
